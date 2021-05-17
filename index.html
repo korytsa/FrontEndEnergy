@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Гродноэнерго</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="logoEnergo.png">
+    </head>
+	<body>
+		<header class="header">
+			<img class="header__logo" src="logoEnergo.png" alt="logo" />
+			<div class="header__title">
+				На данный момент необходимо
+				<span class="need"></span>кВт  энергии
+			</div>
+			<time class="header__time"></time>
+		</header>
+		<main>
+			<div class="station">
+				<div class="station__title">Основные источники энергии</div>
+				<div class="border__for__table">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Данные</th>
+								<th scope="col">Максимальная мощность</th>
+								<th scope="col">Производимая мощность</th>
+								<th scope="col">Отключения за текущие сутки</th>
+							</tr>
+						</thead>
+						<tbody class="table__main"></tbody>
+					</table>
+				</div>
+			</div>
+
+
+			<div class="buttle">
+				<div class="buttle__title">Основные источники энергии</div>
+				<div class="container">
+					<div class="buttle__wrapper">
+						<div class="buttle__wrapper__info yellow">
+							<div class="buttle__wrapper__info__empty yellow__field">75%</div>
+						</div>
+						<div class="buttle__wrapper__title">Гродненская ТЭЦ-2</div>
+					</div>
+
+					<div class="buttle__wrapper">
+						<div class="buttle__wrapper__info brown">
+							<div class="buttle__wrapper__info__empty brown__field">15%</div>
+						</div>
+						<div class="buttle__wrapper__title">Лидская ТЭЦ</div>
+					</div>
+
+					<div class="buttle__wrapper">
+						<div class="buttle__wrapper__info orange">
+							<div class="buttle__wrapper__info__empty orange__field">99%</div>
+						</div>
+						<div class="buttle__wrapper__title">Белорусская АЭС</div>
+					</div>
+
+					<div class="buttle__wrapper">
+						<div class="buttle__wrapper__info red">
+							<div class="buttle__wrapper__info__empty red__field">50%</div>
+						</div>
+						<div class="buttle__wrapper__title">Мини-ТЭЦ Северная</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station">
+				<div class="station__title">Альтернативные источники энергии</div>
+				<div class="station__subtitle">
+					Энергия солнца
+					<div class="station__subtitle__empty"></div>
+				</div>
+				<div class="border__for__table">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Данные</th>
+								<th scope="col">Максимальная мощность</th>
+								<th scope="col">Производимая мощность</th>
+								<th scope="col">Отключения за текущие сутки</th>
+							</tr>
+						</thead>
+						<tbody class="table__sun"></tbody>
+					</table>
+				</div>
+
+				<div class="station__subtitle">
+					Энергия ветра
+					<div class="station__subtitle__empty"></div>
+				</div>
+				<div class="border__for__table">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Данные</th>
+								<th scope="col">Максимальная мощность</th>
+								<th scope="col">Производимая мощность</th>
+								<th scope="col">Отключения за текущие сутки</th>
+							</tr>
+						</thead>
+						<tbody class="table__wind"></tbody>
+					</table>
+				</div>
+
+				<div class="station__subtitle">
+					Энергия движения водных потоков
+					<div class="station__subtitle__empty"></div>
+				</div>
+				<div class="border__for__table">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Данные</th>
+								<th scope="col">Максимальная мощность</th>
+								<th scope="col">Производимая мощность</th>
+								<th scope="col">Отключения за текущие сутки</th>
+							</tr>
+						</thead>
+						<tbody class="table__water"></tbody>
+					</table>
+				</div>
+
+				<div class="station__subtitle">
+					Энергия биомассы
+					<div class="station__subtitle__empty"></div>
+				</div>
+				<div class="border__for__table">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Данные</th>
+								<th scope="col">Максимальная мощность</th>
+								<th scope="col">Производимая мощность</th>
+								<th scope="col">Отключения за текущие сутки</th>
+							</tr>
+						</thead>
+						<tbody class="table__biomas"></tbody>
+					</table>
+				</div>
+
+				<div class="station__subtitle">
+					Энергия биогаза
+					<div class="station__subtitle__empty"></div>
+				</div>
+				<div class="border__for__table">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Данные</th>
+								<th scope="col">Максимальная мощность</th>
+								<th scope="col">Производимая мощность</th>
+								<th scope="col">Отключения за текущие сутки</th>
+							</tr>
+						</thead>
+						<tbody class="table__biogas"></tbody>
+					</table>
+				</div>
+
+			</div>
+		</main>
+
+		<footer>
+			<span>© 2010-2021 РУП «Гродноэнерго».</span>
+			<span>Все права защищены.</span>
+			<span>Перепечатка материалов разрешена с указанием авторства.</span>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
